@@ -33,7 +33,7 @@ public class lvl8 extends Levels{
         symbol = randomLine.substring(0, randomLine.indexOf(":"));
         unicode = randomLine.substring(randomLine.indexOf(":") + 1);
 
-        instruction.append("unicode-koden till denna symbol: ").append(symbol);
+        instruction.append("innehålla unicode-koden till denna symbol: ").append(symbol);
     }
 
     @Override

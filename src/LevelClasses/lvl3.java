@@ -2,6 +2,9 @@ package LevelClasses;
 
 public class lvl3 extends Levels{
 
+    public lvl3 () {
+        instruction.append("innehålla minst ett specialtecken");
+    }
     String specialTecken = "!@#£¤$%&/{([)]=}?+´`¨~^*'<>|;,:.-_";
     @Override
     public boolean checkRequirements(String input) {

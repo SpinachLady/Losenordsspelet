@@ -5,6 +5,11 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class lvl7 extends Levels {
+
+    public lvl7 () {
+        instruction.delete(0, instruction.length());
+        instruction.append("Planeter skrivs med stor bokstav hörru!");
+    }
     File planets = new File("src/LevelClasses/Datafiles/Planets.txt");
     Scanner scanFile;
 

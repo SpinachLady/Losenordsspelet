@@ -1,6 +1,10 @@
 package LevelClasses;
 
 public class lvl4 extends Levels{
+    public lvl4 () {
+        instruction.append("innehålla minst en siffra");
+    }
+
     String siffror = "0123456789";
     @Override
     public boolean checkRequirements(String input) {

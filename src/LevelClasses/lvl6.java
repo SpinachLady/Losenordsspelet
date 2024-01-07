@@ -5,6 +5,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class lvl6 extends Levels{
+
+    public lvl6 () {
+        instruction.append("innehålla namnet på en planet i vårt solsystem");
+    }
     File planets = new File ("src/LevelClasses/Datafiles/Planets.txt");
     Scanner scanFile;
     @Override

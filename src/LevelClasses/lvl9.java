@@ -8,6 +8,9 @@ public class lvl9 extends Levels{
     File colors = new File("src/LevelClasses/Datafiles/Colors.txt");
     Scanner scanFile;
 
+    public lvl9 () {
+        instruction.append("innehålla minst en av regnbågens färger");
+    }
     @Override
     public boolean checkRequirements(String input) {
         try {

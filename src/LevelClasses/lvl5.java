@@ -1,6 +1,9 @@
 package LevelClasses;
 
 public class lvl5 extends Levels{
+    public lvl5 () {
+        instruction.append("även innehålla minst en romersk siffra");
+    }
     String romerskaSiffror = "IVXLCDM";
     @Override
     public boolean checkRequirements(String input) {
