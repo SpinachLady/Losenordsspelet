@@ -1,0 +1,12 @@
+Röd
+Red
+Orange
+Gul
+Yellow
+Grön
+Green
+Blå
+Blue
+Indigo
+Violett
+Violet
