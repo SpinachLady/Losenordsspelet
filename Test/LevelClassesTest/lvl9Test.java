@@ -1,6 +1,5 @@
 package LevelClassesTest;
 
-import LevelClasses.lvl8;
 import LevelClasses.lvl9;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
