@@ -47,6 +47,9 @@ public class Gui {
 
     public void addInstruction(ArrayList<Level> levels) {
         bottomPanel.removeAll();
+        while (levels.size() > 6) {
+            levels.remove(6);
+        }
         for (Level level : levels) {
             JLabel insLabel = new JLabel("ⓘ" + level.instruction);
             insLabel.setForeground(Color.red);
@@ -54,6 +57,7 @@ public class Gui {
             insLabel.setVerticalAlignment(SwingConstants.CENTER);
             bottomPanel.add(insLabel);
         }
+        bottomPanel.revalidate();
+        bottomPanel.repaint();
     }
-
 }
