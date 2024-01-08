@@ -54,13 +54,18 @@ public class Levels {
             }
         }
         if (allActiveLevelsPassed) {
-            openNewLevel();
+            while (true) {
+                int i = getActiveLevels().size();
+                allLevels.get(i).setToActive();
+                if (!allLevels.get(i).checkRequirements(input)) { //om den aktiverade leveln redan är uppfylld aktiveras en ny
+                    unpassedLevels.add(allLevels.get(i));
+                    break;
+                }
+            }
         }
         return unpassedLevels;
     }
     public void openNewLevel() {
-        int i = getActiveLevels().size();
-        allLevels.get(i).setToActive();
-        getUnpassedLevels(input);
+
     }
 }
