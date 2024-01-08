@@ -1,6 +1,6 @@
 package LevelClasses;
 
-public class lvl4 extends Levels{
+public class lvl4 extends Level {
     public lvl4 () {
         instruction.append("innehålla minst en siffra");
     }

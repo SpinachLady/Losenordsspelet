@@ -1,5 +1,8 @@
+import LevelClasses.Level;
+
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class Gui {
     JFrame frame = new JFrame("Lösenordsspelet");
@@ -42,16 +45,15 @@ public class Gui {
 
     }
 
-    public void addInstruction(String instruction) {
-        JLabel insLabel = new JLabel("ⓘ" + instruction);
-        insLabel.setForeground(Color.red);
-        insLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        insLabel.setVerticalAlignment(SwingConstants.CENTER);
-        bottomPanel.add(insLabel);
-
-    }
-    public void removeInstruction (String instruction) {
-        //metod
+    public void addInstruction(ArrayList<Level> levels) {
+        bottomPanel.removeAll();
+        for (Level level : levels) {
+            JLabel insLabel = new JLabel("ⓘ" + level.instruction);
+            insLabel.setForeground(Color.red);
+            insLabel.setHorizontalAlignment(SwingConstants.CENTER);
+            insLabel.setVerticalAlignment(SwingConstants.CENTER);
+            bottomPanel.add(insLabel);
+        }
     }
 
 }

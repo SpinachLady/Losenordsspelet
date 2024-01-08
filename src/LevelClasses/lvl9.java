@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class lvl9 extends Levels{
+public class lvl9 extends Level {
     File colors = new File("src/LevelClasses/Datafiles/Colors.txt");
     Scanner scanFile;
 

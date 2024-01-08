@@ -1,6 +1,6 @@
 package LevelClasses;
 
-public class lvl5 extends Levels{
+public class lvl5 extends Level {
     public lvl5 () {
         instruction.append("även innehålla minst en romersk siffra");
     }

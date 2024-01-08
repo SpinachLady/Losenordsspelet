@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class lvl7 extends Levels {
+public class lvl7 extends Level {
 
     public lvl7 () {
         instruction.delete(0, instruction.length());

@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class lvl8 extends Levels{
+public class lvl8 extends Level {
     File unicodeSymbols = new File("src/LevelClasses/Datafiles/Characters.txt");
     Scanner scanFile;
     String randomLine;

@@ -1,6 +1,6 @@
 package LevelClasses;
 
-public class lvl3 extends Levels{
+public class lvl3 extends Level {
 
     public lvl3 () {
         instruction.append("innehålla minst ett specialtecken");

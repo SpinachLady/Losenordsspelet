@@ -1,6 +1,6 @@
 package LevelClasses;
 
-public class lvl1 extends Levels{
+public class lvl1 extends Level {
 
     public lvl1 () {
         instruction.append("vara minst 5 tecken långt");

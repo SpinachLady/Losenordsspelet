@@ -1,6 +1,6 @@
 package LevelClasses;
 
-public class lvl2 extends Levels{
+public class lvl2 extends Level {
 
     public lvl2 () {
         instruction.append("innehålla minst en stor bokstav");

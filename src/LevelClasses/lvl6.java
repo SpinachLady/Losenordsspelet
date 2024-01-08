@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class lvl6 extends Levels{
+public class lvl6 extends Level {
 
     public lvl6 () {
         instruction.append("innehålla namnet på en planet i vårt solsystem");
