@@ -5,14 +5,14 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Gui {
-    JFrame frame = new JFrame("Lösenordsspelet");
-    JPanel topPanel = new JPanel(new GridLayout(1,3));
-    JPanel middlePanel = new JPanel(new GridBagLayout());
-    JPanel bottomPanel = new JPanel(new GridLayout(6,1));
-    JLabel headerLabel = new JLabel("Välj ett lösenord");
-    JTextField pwField = new JTextField();
-    Font headerFont = new Font("Arial", Font.PLAIN, 20);
-    Color backgroundColor = new Color(212, 243, 252);
+    private JFrame frame = new JFrame("Lösenordsspelet");
+    private JPanel topPanel = new JPanel(new GridLayout(1,3));
+    private JPanel middlePanel = new JPanel(new GridBagLayout());
+    private JPanel bottomPanel = new JPanel(new GridLayout(6,1));
+    private JLabel headerLabel = new JLabel("Välj ett lösenord");
+    public JTextField pwField = new JTextField();
+    private Font headerFont = new Font("Arial", Font.PLAIN, 20);
+    private Color backgroundColor = new Color(212, 243, 252);
 
     public Gui() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

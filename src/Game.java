@@ -4,7 +4,6 @@ import javax.swing.event.DocumentEvent;
 import java.util.ArrayList;
 
 public class Game {
-
     Gui gui = new Gui();
     Levels levels = new Levels();
     public Game () {
