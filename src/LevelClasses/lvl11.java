@@ -9,6 +9,17 @@ public class lvl11 extends Level{
 
     @Override
     public boolean checkRequirements(String input) {
-        return false;
+        int count = 0;
+        for (int i = 0; i < input.length(); i++) {
+            if (Character.isDigit(input.charAt(i))) {
+                count = count + Integer.parseInt(String.valueOf(input.charAt(i)));
+            }
+        }
+        if (count == 33) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
