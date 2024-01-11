@@ -22,8 +22,11 @@ public class lvl7 extends Level {
         }
         while (scanFile.hasNext()) {
             String s = scanFile.nextLine();
-            if (input.contains(s)) {
-                return true;
+            if (input.toLowerCase().contains(s.toLowerCase())) {
+                int i = input.toLowerCase().indexOf(s.toLowerCase());
+                if (Character.isUpperCase(input.charAt(i))){
+                    return true;
+                }
             }
         }
         return false;
