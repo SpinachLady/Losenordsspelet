@@ -14,7 +14,7 @@ public class lvl8Test {
         Assertions.assertEquals(expectedResult1, actualResult1);
 
 
-        String inputTest2 = "testarU+1F61D";
+        String inputTest2 = "testar😝";
         boolean expectedResult2 = true;
         boolean actualResult2 = testlvl.checkRequirements(inputTest2);
         Assertions.assertEquals(expectedResult2, actualResult2);

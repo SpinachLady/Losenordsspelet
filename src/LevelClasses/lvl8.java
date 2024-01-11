@@ -33,12 +33,12 @@ public class lvl8 extends Level {
         symbol = randomLine.substring(0, randomLine.indexOf(":"));
         unicode = randomLine.substring(randomLine.indexOf(":") + 1);
 
-        instruction.append("innehålla unicode-koden till denna symbol: ").append(symbol);
+        instruction.append("innehålla symbolen som har denna unicode-kod: ").append(unicode);
     }
 
     @Override
     public boolean checkRequirements(String input) {
-        if (input.contains(unicode)) {
+        if (input.contains(symbol)) {
             return true;
         }
         else {
