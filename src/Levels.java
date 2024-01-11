@@ -13,6 +13,10 @@ public class Levels {
     private lvl8 lvl8 = new lvl8(false);
     private lvl9 lvl9 = new lvl9();
     private lvl10 lvl10 = new lvl10();
+    private lvl11 lvl11 = new lvl11();
+    private lvl12 lvl12 = new lvl12();
+    private lvl13 lvl13 = new lvl13();
+    private lvl14 lvl14 = new lvl14();
     private final ArrayList<Level> allLevels = new ArrayList<>();
     private boolean allActiveLevelsPassed;
     private String input;
@@ -28,6 +32,10 @@ public class Levels {
         allLevels.add(lvl8);
         allLevels.add(lvl9);
         allLevels.add(lvl10);
+        allLevels.add(lvl11);
+        allLevels.add(lvl12);
+        allLevels.add(lvl13);
+        allLevels.add(lvl14);
     }
     public ArrayList<Level> getActiveLevels() {
         ArrayList<Level> activeLevels = new ArrayList<>();
