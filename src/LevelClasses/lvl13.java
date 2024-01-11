@@ -9,8 +9,8 @@ public class lvl13 extends Level{
     Scanner scanFile;
 
     public lvl13() {
-
         instruction.append("innehålla namnet på ett av programmen som ingår i Microsoft Office-paketet");
+
     }
 
     @Override
