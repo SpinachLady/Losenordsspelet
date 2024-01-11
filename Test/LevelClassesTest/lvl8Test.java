@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class lvl8Test {
-    lvl8 testlvl = new lvl8(true);
+    lvl8 testlvl = new lvl8();
     @Test
     public void checkRequirementsTest () {
         String inputTest1 = "testar";
@@ -14,7 +14,7 @@ public class lvl8Test {
         Assertions.assertEquals(expectedResult1, actualResult1);
 
 
-        String inputTest2 = "testar😝";
+        String inputTest2 = "testarHe";
         boolean expectedResult2 = true;
         boolean actualResult2 = testlvl.checkRequirements(inputTest2);
         Assertions.assertEquals(expectedResult2, actualResult2);

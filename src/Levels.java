@@ -10,7 +10,7 @@ public class Levels {
     private lvl5 lvl5 = new lvl5();
     private lvl6 lvl6 = new lvl6();
     private lvl7 lvl7 = new lvl7();
-    private lvl8 lvl8 = new lvl8(false);
+    private lvl8 lvl8 = new lvl8();
     private lvl9 lvl9 = new lvl9();
     private lvl10 lvl10 = new lvl10();
     private lvl11 lvl11 = new lvl11();

@@ -2,47 +2,28 @@ package LevelClasses;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class lvl8 extends Level {
-    File unicodeSymbols = new File("src/LevelClasses/Datafiles/Characters.txt");
+public class lvl8 extends Level{
     Scanner scanFile;
-    String randomLine;
-    String symbol;
-    String unicode;
+    File periodicTable = new File("src/LevelClasses/Datafiles/PeriodicTable.txt");
 
-    public lvl8 (boolean isTest) {
-        ArrayList<String> lines = new ArrayList<>();
+    public lvl8() {
+        instruction.append("innehålla ett grundämnes kemiska beteckning som består av två bokstäver");
+    }
+    @Override
+    public boolean checkRequirements(String input) {
         try {
-            scanFile = new Scanner(unicodeSymbols);
+            scanFile = new Scanner(periodicTable);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
         while (scanFile.hasNext()) {
             String s = scanFile.nextLine();
-            lines.add(s);
+            if (input.contains(s)) {
+                return true;
+            }
         }
-        if (isTest) {
-            randomLine = "😝:U+1F61D";
-        }
-        else {
-            int random = (int) (Math.random() * lines.size());
-            randomLine = lines.get(random);
-        }
-        symbol = randomLine.substring(0, randomLine.indexOf(":"));
-        unicode = randomLine.substring(randomLine.indexOf(":") + 1);
-
-        instruction.append("innehålla symbolen som har denna unicode-kod: ").append(unicode);
-    }
-
-    @Override
-    public boolean checkRequirements(String input) {
-        if (input.contains(symbol)) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return false;
     }
 }
