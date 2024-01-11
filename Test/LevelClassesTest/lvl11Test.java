@@ -16,7 +16,7 @@ public class lvl11Test {
         Assertions.assertEquals(expectedResult1, actualResult1);
 
 
-        String inputTest2 = "testar9996";
+        String inputTest2 = "testar9995I";
         boolean expectedResult2 = true;
         boolean actualResult2 = testlvl.checkRequirements(inputTest2);
         Assertions.assertEquals(expectedResult2, actualResult2);
