@@ -12,8 +12,14 @@ public class Game {
             public void update(DocumentEvent e) {
                 String input = gui.pwField.getText();
                 ArrayList<Level> unpassedLevels = levels.getUnpassedLevels(input);
-                gui.addInstruction(unpassedLevels);
+                if (unpassedLevels.isEmpty()) {
+                    gui.gameComplete();
+                } else {
+                    gui.addInstruction(unpassedLevels);
+                }
             }
         });
     }
+
+
 }

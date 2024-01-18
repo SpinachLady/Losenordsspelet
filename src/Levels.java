@@ -62,6 +62,9 @@ public class Levels {
         if (allActiveLevelsPassed) {
             while (true) {
                 int i = getActiveLevels().size();
+                if (i > 14) {
+                    break;
+                }
                 allLevels.get(i).setToActive();
                 if (!allLevels.get(i).checkRequirements(input)) { //om den aktiverade leveln redan är uppfylld aktiveras en ny
                     unpassedLevels.add(allLevels.get(i));
