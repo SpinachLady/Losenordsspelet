@@ -19,7 +19,7 @@ public class lvl11 extends Level{
         romerskaSiffror = scanFile.nextLine();
         romerskaSiffror_value = scanFile.nextLine().split(":");
         instruction.delete(0, instruction.length());
-        instruction.append("Siffrorna i ditt lösenord måste ha en summa på 33");
+        instruction.append("Siffrorna i ditt lösenord (inkl de romerska) måste ha en summa på 33");
     }
 
     @Override
