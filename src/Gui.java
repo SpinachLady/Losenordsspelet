@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 public class Gui {
     private JFrame frame = new JFrame("Lösenordsspelet");
@@ -109,6 +108,7 @@ public class Gui {
         pwField.setEditable(false);
         headerLabel.setText("Lösenordet uppfyller alla krav!");
         topPanel.add(headerLabel);
+        topOfBottomPanel.removeAll();
         topOfBottomPanel.add(finishButton, gbc);
         bottomPanel.add(topOfBottomPanel);
 
