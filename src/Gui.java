@@ -72,7 +72,6 @@ public class Gui {
         topOfBottomPanel.setBackground(backgroundColor);
         topOfBottomPanel.add(startButton, gbc);
         bottomPanel.add(topOfBottomPanel);
-
     }
     public void setUpGameField() {
         GuiSM.remove(topPanel, middlePanel, bottomPanel);
@@ -107,7 +106,6 @@ public class Gui {
         bottomPanel.add(topOfBottomPanel);
 
         GuiSM.revrep(frame);
-
     }
 
     public void setUpLoginField() {
@@ -119,7 +117,6 @@ public class Gui {
         pwField.setEditable(true);
 
         GuiSM.revrep(frame);
-
     }
 
     public void setUpWinFrame(){
@@ -127,6 +124,5 @@ public class Gui {
 
         middlePanel.add(loginSuccessful, gbc);
         GuiSM.revrep(frame);
-
     }
 }
