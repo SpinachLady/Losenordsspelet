@@ -1,0 +1,6 @@
+För att lägga till nya levels:
+
+1. Skapa testklass för leveln
+2. Skapa en barnklass till Level i mappen LevelClasses
+3. Skapa en instans av den nya klassen i Levels
+4. Lägg till instansen i listan allLevels i klassen Levels
