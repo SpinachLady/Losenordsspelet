@@ -20,7 +20,6 @@ public class Levels {
     private lvl15 lvl15 = new lvl15();
     private final ArrayList<Level> allLevels = new ArrayList<>();
     private boolean allActiveLevelsPassed;
-    private String input;
 
     public Levels () {
         allLevels.add(lvl1);
@@ -51,7 +50,6 @@ public class Levels {
 
     public ArrayList<Level> getUnpassedLevels(String input) {
         ArrayList<Level> unpassedLevels = new ArrayList<>();
-        this.input = input;
         allActiveLevelsPassed = true;
         for (Level level : getActiveLevels()) {
             if (!level.checkRequirements(input)) {
