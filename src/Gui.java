@@ -128,6 +128,8 @@ public class Gui {
         pwField.setText("");
         pwField.setEditable(true);
 
+        bottomPanel.revalidate();
+        bottomPanel.repaint();
         topPanel.revalidate();
         topPanel.repaint();
 
