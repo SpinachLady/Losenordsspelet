@@ -75,20 +75,17 @@ public class Gui {
 
     }
     public void setUpGameField() {
-        topPanel.removeAll();
-        middlePanel.removeAll();
-        bottomPanel.removeAll();
+        GuiSM.remove(topPanel, middlePanel, bottomPanel);
 
         headerLabel.setText("Välj ett lösenord");
         topPanel.add(headerLabel);
         pwField.setPreferredSize(new Dimension(400, 30));
         middlePanel.add(pwField, gbc);
-        frame.revalidate();
-        frame.repaint();
+        GuiSM.revrep(frame);
     }
 
     public void addInstruction(ArrayList<Level> levels) {
-        bottomPanel.removeAll();
+        GuiSM.remove(bottomPanel);
         while (levels.size() > 6) {
             levels.remove(6);
         }
@@ -99,54 +96,37 @@ public class Gui {
             insLabel.setVerticalAlignment(SwingConstants.CENTER);
             bottomPanel.add(insLabel);
         }
-        bottomPanel.revalidate();
-        bottomPanel.repaint();
+        GuiSM.revrep(frame);
     }
     public void passwordSuccessful() {
-        bottomPanel.removeAll();
-        topPanel.removeAll();
+        GuiSM.remove(topPanel, topOfBottomPanel, bottomPanel);
         pwField.setEditable(false);
         headerLabel.setText("Lösenordet uppfyller alla krav!");
         topPanel.add(headerLabel);
-        topOfBottomPanel.removeAll();
         topOfBottomPanel.add(finishButton, gbc);
         bottomPanel.add(topOfBottomPanel);
 
-        bottomPanel.revalidate();
-        bottomPanel.repaint();
-        topPanel.revalidate();
-        topPanel.repaint();
+        GuiSM.revrep(frame);
 
     }
 
     public void setUpLoginField() {
-        topPanel.removeAll();
-        bottomPanel.removeAll();
+        GuiSM.remove(topPanel, bottomPanel);
         headerLabel.setText("Nu kan du logga in med ditt lösenord");
         topPanel.add(headerLabel);
 
         pwField.setText("");
         pwField.setEditable(true);
 
-        bottomPanel.revalidate();
-        bottomPanel.repaint();
-        topPanel.revalidate();
-        topPanel.repaint();
+        GuiSM.revrep(frame);
 
     }
 
     public void setUpWinFrame(){
-        bottomPanel.removeAll();
-        middlePanel.removeAll();
-        topPanel.removeAll();
+        GuiSM.remove(topPanel, middlePanel, bottomPanel);
 
         middlePanel.add(loginSuccessful, gbc);
-        bottomPanel.revalidate();
-        bottomPanel.repaint();
-        middlePanel.revalidate();
-        middlePanel.repaint();
-        topPanel.revalidate();
-        topPanel.repaint();
+        GuiSM.revrep(frame);
 
     }
 }
